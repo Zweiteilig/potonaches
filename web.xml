@@ -1,0 +1,35 @@
+<Context>
+<web-app
+  version="3.0"
+  xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+ 
+ <display-name>Archetype Created Web Application</display-name>  
+ <servlet>
+  <servlet-name>AllThemLoginServlet</servlet-name>
+  <servlet-class>AllThemLoginServlet</servlet-class>
+ </servlet>
+ 
+ <servlet-mapping>
+  <servlet-name>AllThemLoginServlet</servlet-name>
+  <url-pattern>AllThemLoginServlet</url-pattern>
+ </servlet-mapping>
+ 
+     <resource-ref>
+        <description>
+        This is a reference to the global Resource for MySQL database connetion.
+        </description>
+        <res-ref-name>
+        jdbc/Quatrarian
+        </res-ref-name>
+        <res-type>
+        javax.sql.DataSource
+        </res-type>
+        <res-auth>
+        Container
+        </res-auth>
+    </resource-ref>
+	
+</web-app>
+</Context>

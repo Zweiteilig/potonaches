@@ -1,0 +1,8 @@
+<Context>
+     
+    <ResourceLink name="jdbc/Quatrarian"
+    global="jdbc/Quatrarian"
+    type="javax.sql.DataSource"
+    />
+     
+</Context>
